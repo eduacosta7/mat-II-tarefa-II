@@ -42,7 +42,7 @@ for (const alternativas of perguntaAtual.alternativas) {
     caixaAlternativas.appendChild(botãoAlternativa)}
 
     function respostaSelecionada(pergunta) {
-
+const afirmações = pergunta.afirmação
         atual++;
         mostraPerguntas();
 
