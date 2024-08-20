@@ -57,3 +57,7 @@ function respostaSelecionada(pergunta) {
     mostraPerguntas();
 
 }
+
+function mostraRsultado()
+    
+}
