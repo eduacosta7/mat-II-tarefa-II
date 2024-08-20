@@ -6,9 +6,17 @@ const textoResultado = document.querySelector('texto-resultado')
 
 const perguntas = [
     {
-        enunciado: "No âmbito social, você prefere", alternativas: [
-            { texto: "Alternativa1", afirmação: "afirmação", },
-            { texto: "Alternativa2", afirmação: "afirmação", }]
+        enunciado: "No âmbito social, você prefere",
+        alternativas: [
+            {
+                texto: "Alternativa1",
+                afirmação: "afirmação",
+            },
+
+            {
+                texto: "Alternativa2",
+                afirmação: "afirmação",
+            }]
     },
 
     {
@@ -23,15 +31,16 @@ const perguntas = [
             { texto: "Alternativa6", afirmação: "afirmação", }]
     }
 
+]
 
 
 
-
-             let atual = 0 let perguntaAtual;
+let atual = 0;
+let perguntaAtual;
 function mostraPerguntas() {
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
-    caixaAlternativas.textContent="."
+    caixaAlternativas.textContent = "."
     mostraAlternativas();
 }
 mostraAlternativas();
@@ -39,11 +48,12 @@ for (const alternativas of perguntaAtual.alternativas) {
     const botaoAlternativa = documnt.createElement("button")
     botaoAlternativa.textContent = alternativa.texto;
     botaoAlternativa.addeventlitenr("click", () => respostaSelecionada(pergunta));
-    caixaAlternativas.appendChild(botãoAlternativa)}
+    caixaAlternativas.appendChild(botãoAlternativa)
+}
 
-    function respostaSelecionada(pergunta) {
-const afirmações = pergunta.afirmação
-        atual++;
-        mostraPerguntas();
+function respostaSelecionada(pergunta) {
+    const afirmações = pergunta.afirmação
+    atual++;
+    mostraPerguntas();
 
-    }
+}
