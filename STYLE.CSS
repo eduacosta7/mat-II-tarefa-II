@@ -1,12 +1,12 @@
-:root{
+:root {
     --cor-fundo: #031a2e;
-    --cor-principal: #0B0D20 ;
+    --cor-principal: #0B0D20;
     --cor-secundaria: #2b3dc2;
     --cor-destaque: #2BDEFD;
     --cor-texto: #D7F9FF;
 }
 
-body{
+body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     display: flex;
@@ -17,16 +17,16 @@ body{
 }
 
 
-.rodape{
-    background-color:#182379;
-    text-align:center;
+.rodape {
+    background-color: #182379;
+    text-align: center;
     position: fixed;
     bottom: 0%;
     width: 100%;
     text-align: center;
 }
 
-#container{
+#container {
     padding: 4rem;
     display: flex;
     flex-wrap: wrap;
@@ -42,21 +42,20 @@ body{
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
 }
-    .cartao{
 
-        margin: 1rem;
-        flex-grow: 1;
-        flex-basis: calc(30% - 4rem);
-        height: 20rem;
-    }
+.cartao {
 
-    .conteudo-cartao h3 {
-position: absolute;
-border: 1px solid;
-padding: 0.5rem;
-margin: 0.6rem;
-backface-visibility: hidden;
-border-radius: 0.5rem;
- }
+    margin: 1rem;
+    flex-grow: 1;
+    flex-basis: calc(30% - 4rem);
+    height: 20rem;
+}
 
-    
+.conteudo-cartao h3 {
+    position: absolute;
+    border: 1px solid;
+    padding: 0.5rem;
+    margin: 0.6rem;
+    backface-visibility: hidden;
+    border-radius: 0.5rem;
+}
