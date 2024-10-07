@@ -69,7 +69,7 @@ body {
 
 
 .resposta-cartao p{
-    color: var(--cor-principal);
+    color: var(--cor-destaque);
     font-weight: 700;
 }
 
