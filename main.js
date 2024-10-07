@@ -18,6 +18,11 @@ cartao.innerHTML =
 </div>
 </div>
 `
+let respostavisivel = false;
+function viraCartão(){
+    respostavisivel =!respostavisivel;
+    cartao.classList.toggle('active, respostavisivel');
+}
+cartao.addEventListenner('click', viraCartão);
 container.appendChild(cartao);
 
-}
