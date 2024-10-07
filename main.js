@@ -19,7 +19,7 @@ cartao.innerHTML =
 let respostavisivel = false;
 function viraCartão(){
     respostavisivel =!respostavisivel;
-    cartao.classList.toggle('active, respostavisivel');
+    cartao.classList.toggle('active', respostavisivel);
 }
 cartao.addEventListener('click', viraCartão);
 container.appendChild(cartao);
