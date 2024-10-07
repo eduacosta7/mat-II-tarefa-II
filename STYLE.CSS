@@ -35,7 +35,7 @@ body {
 }
 
 .conteudo-cartao {
-    background-color: #0B0D20;
+    background-color:var(--cor-principal);
     color: beige;
     text-align: center;
     height: 100%;
@@ -69,7 +69,7 @@ body {
 
 
 .resposta-cartao p{
-    color: var(--cartao-verso);
+    color: var(--cor-secundaria);
     font-weight: 700;
 }
 
@@ -89,5 +89,5 @@ body {
 
 .resposta-cartao{
     transform: rotateY(180deg);
-    background-color: var(--cartao-verso);
+    background-color: var(--cor-secundaria);
     border: 4px solid var(--cor-destaque) ;}
